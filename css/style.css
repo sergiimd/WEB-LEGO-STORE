@@ -1,0 +1,267 @@
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+/* Eliminar márgenes y padding predeterminados del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+}
+  
+/* Asegurar que el navbar ocupe el 100% del ancho */
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Ordena las barras una debajo de la otra */
+    border-bottom: 1px solid #ddd;
+}
+  
+/* Barra superior: Redes sociales, envío gratuito y selector de moneda/idioma */
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+  
+/* Redes sociales en la barra superior */
+.social-icons a {
+    margin-right: 15px;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+}
+  
+.shipping-info {
+    font-size: 14px;
+    color: #333;
+}
+  
+/* Ajuste de los selectores de moneda e idioma */
+.currency-language select {
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+  
+/* Barra principal: Logo, barra de búsqueda e iconos */
+.main-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+  
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+  
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-right: 20px;
+}
+  
+.search-bar input {
+    padding: 8px 15px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+}
+  
+.search-bar button {
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+  
+/* Iconos en la barra principal */
+.icons a {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    text-decoration: none;
+}
+  
+.icons a .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+  
+/* Menú de navegación */
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+}
+  
+.nav-menu a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+/* Icono del menú hamburguesa (oculto por defecto en pantallas grandes) */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+  
+.hamburger-menu i {
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+}
+
+/* Mostrar el menú hamburguesa y ocultar el menú normal en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Oculta el menú de navegación por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+        font-size: 16px;
+        padding: 10px 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hamburger-menu {
+        display: block; /* Mostramos el menú hamburguesa */
+    }
+}
+
+/* Menú desplegado cuando se hace clic en el icono */
+.nav-menu.active {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+
+/* Ajustes para tabletas y pantallas medianas (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column; /* Apila los elementos en lugar de ponerlos en línea */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .main-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-bar input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+    }
+}
+
+/* Ajustes para móviles y pantallas pequeñas (menos de 480px de ancho) */
+@media (max-width: 480px) {
+    .top-bar {
+        flex-direction: column;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .main-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar input {
+        width: 90%; /* Más ancho para móviles */
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        margin: 8px 0;
+        font-size: 16px; /* Un poco más grande en móvil */
+    }
+}
