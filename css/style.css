@@ -275,6 +275,40 @@ body {
 
 
 /*-----------------------------------*\
+  #CARRUSEL
+\*-----------------------------------*/
+
+.d-block{
+  height: 80vh;
+  margin-top: -3em;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20rem;
+  left: 65%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
   #SETS DESTACADOS
 \*-----------------------------------*/
 
