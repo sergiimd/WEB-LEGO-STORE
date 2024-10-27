@@ -277,7 +277,6 @@ body {
 /*-----------------------------------*\
   #CARRUSEL
 \*-----------------------------------*/
-
 .d-block{
   height: 80vh;
   margin-top: -3em;
@@ -294,6 +293,246 @@ body {
   text-align: center;
 }
 
+/*-----------------------------------*\
+  #TIENDA
+\*-----------------------------------*/
+.products > h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  border: 1rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.products .box-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .7rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+  background: #1680AC;
+  z-index: 1;
+  border-radius: .5rem;
+}
+
+.products .box-container .box .imagep {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.products .box-container .box .imagep img{
+  height: 25rem;
+}
+
+.products .box-container .box:hover .imagep img{
+  transform: scale(1.1);
+}
+
+.products .box-container .box .imagep .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+
+}
+.products .box-container .box:hover .imagep .icons {
+  bottom: 0;
+
+}
+
+.products .box-container .box .imagep .icons a{
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.1rem;
+  width: 50%;
+  background: #1680AC;
+  color: white;
+}
+
+.products .box-container .box .imagep .icons .cart-btn{
+  width: 100%;
+}
+
+.products .box-container .box .imagep .icons a:hover{
+  background: #1680AC;
+}
+
+.products .box-container .box .contentp{
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.products .box-container .box .contentp h3{
+  font-size: 1.1rem;
+  color: black;
+}
+
+.products .box-container .box .contentp .price{
+  font-size: 1rem;
+  color: blacke;
+  font-weight: bolder;
+  padding-top: 0.5rem;
+}
+.products .box-container .box .contentp .price span{
+  font-size: 0.8rem;
+  color: black;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+
+/*-----------------------------------*\
+  #BANNER SANTA
+\*-----------------------------------*/
+img.img-fluid {
+  width: 100vw;
+}
+
+
+/*-----------------------------------*\
+  #SETS DESTACADOS
+\*-----------------------------------*/
+#destacados > h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+.container img {
+  max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina el espacio en línea */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+/*-----------------------------------*\
+  #MARCAS SETS DE LEGO
+\*-----------------------------------*/
+.slider {
+  background: #efeef2;
+  height: 75pt;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  user-select: none;
+  touch-action: none;
+  margin-top: 50px;
+}
+
+.slider:before {
+  left: 0;
+  top: 0;
+}
+.slider:after,
+.slider:before {
+  background: linear-gradient(
+      to right,
+      #efeef2 0%,
+      hsla(0, 0%, 100%, 0) 100%
+  );
+  content: "";
+  height: 75pt;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider:after,
+.slider:before {
+  background: linear-gradient(
+      to right,
+      #efeef2 0%,
+      hsla(0, 0%, 100%, 0) 100%
+  );
+  content: "";
+  height: 75pt;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider .slide-track-1 {
+  animation: scroll-l 30s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide-track-2 {
+  animation: scroll-r 30s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+
+.slider .slide {
+  height: 75pt;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.slider .slide img {
+  width: 180px;
+  padding: 1pc;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scroll-l {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+@keyframes scroll-r {
+  100% {
+      transform: translateX(0);
+  }
+  0% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -309,25 +548,50 @@ body {
 
 
 /*-----------------------------------*\
-  #SETS DESTACADOS
+  #TEMATICAS
 \*-----------------------------------*/
-
-
-
-
-.container img {
-  max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Elimina el espacio en línea */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+#tematicas {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 50px; 
+  margin-bottom: 20px; 
 }
 
+#tematicas > h1 {
+  font-weight: bold; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
 
+#tematicas > .cards {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
 
+#tematicas > .cards > .card {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 18rem; 
+}
 
+#tematicas .card-body {
+  text-align: center; 
+}
 
+#tematicas .card-img-top {
+  width: 100%; 
+  height: auto; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
 
-
+#tematicas > button {
+  margin-top: 20px;
+}
 
 
 
