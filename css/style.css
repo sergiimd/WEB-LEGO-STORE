@@ -157,12 +157,11 @@ body {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
-  
-.logo a {
-    font-size: 24px;
-    font-weight: 900;
-    color: #333333;
-    text-decoration: none;
+
+/* LOGO NAVIDEÑO */
+.logo img {
+  width: 90px;
+  height: auto;
 }
   
 .search-bar {

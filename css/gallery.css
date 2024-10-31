@@ -1,0 +1,616 @@
+:root {
+
+    /*-----------------------------------*\
+      #COLORES
+    \*-----------------------------------*/
+      
+        --GRIS: #333333;
+        --BLANCO: #ffffff;
+        --AMARILLO: #FFD700;
+      
+    /*-----------------------------------*\
+      #TIPOGRAFÍAS
+    \*-----------------------------------*/
+      
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+    
+    .roboto-light {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .roboto-regular {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .roboto-medium {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    .roboto-bold {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .roboto-black {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    
+    .roboto-thin-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: italic;
+    }
+    
+    .roboto-light-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+    
+    .roboto-regular-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    .roboto-medium-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+    }
+    
+    .roboto-bold-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+    
+    .roboto-black-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
+    }
+    
+    
+    
+    
+    /*-----------------------------------*\
+      #HEADER
+    \*-----------------------------------*/
+    
+    /* Eliminar márgenes y padding predeterminados del navegador */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+      
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+      
+    
+    /* Asegurar que el navbar ocupe el 100% del ancho */
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Ordena las barras una debajo de la otra */
+        border-bottom: 1px solid #ddd;
+    }
+      
+    
+    /* Barra superior: Redes sociales, envío gratuito y selector de moneda/idioma */
+    .top-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: rgb(222, 0, 13);
+        border-bottom: 1px solid #ddd;
+    }
+      
+    /* Redes sociales en la barra superior */
+    .social-icons a {
+        margin-right: 15px;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration: none;
+    }
+      
+    .shipping-info {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+      
+    /* Ajuste de los selectores de moneda e idioma */
+    .currency-language select {
+        margin-left: 15px;
+        padding: 5px;
+        border: 1px solid #ddd;
+    }
+      
+    /* Barra principal: Logo, barra de búsqueda e iconos */
+    .main-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* LOGO NAVIDEÑO */
+    .logo img {
+      width: 90px;
+      height: auto;
+    }
+      
+    .search-bar {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        margin-right: 20px;
+    }
+      
+    .search-bar input {
+        padding: 8px 15px;
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 20px 0 0 20px;
+    }
+      
+    .search-bar button {
+        padding: 8px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+    }
+      
+    /* Iconos en la barra principal */
+    .icons a {
+        margin-left: 20px;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        text-decoration: none;
+    }
+      
+    .icons a .badge {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+      
+    /* Menú de navegación */
+    .nav-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        background-color: #f9f9f9;
+    }
+      
+    .nav-menu a {
+        margin: 0 15px;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+      
+    .nav-menu a:hover {
+        color: #007bff;
+    }
+    
+    /* Icono del menú hamburguesa (oculto por defecto en pantallas grandes) */
+    .hamburger-menu {
+        display: none;
+        cursor: pointer;
+    }
+      
+    .hamburger-menu i {
+        font-size: 24px;
+        color: #333;
+        padding: 10px;
+    }
+    
+    /* Mostrar el menú hamburguesa y ocultar el menú normal en pantallas pequeñas */
+    @media (max-width: 768px) {
+        .nav-menu {
+            display: none; /* Oculta el menú de navegación por defecto */
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            z-index: 1000;
+        }
+    
+        .nav-menu a {
+            margin: 10px 0;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+    
+        .hamburger-menu {
+            display: block; /* Mostramos el menú hamburguesa */
+        }
+    }
+    
+    /* Menú desplegado cuando se hace clic en el icono */
+    .nav-menu.active {
+        display: flex;
+    }
+
+
+
+
+    
+/*-----------------------------------*\
+  #LADRILLOS Y PIEZAS
+\*-----------------------------------*/
+
+.img-fondo {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 5%;
+  }
+
+.contenidoladrillos > h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+    color: black;
+    margin: 3%;
+    position: absolute;
+    top: 50%; /* Ajusta esta posición según necesites */
+    left: 18%;
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados, opcional */
+}
+
+.contenidoladrillos > p {
+    position: absolute;
+    top: 66%; /* Posiciona debajo del h1 */
+    left: 35%; /* Ajusta para que quede a la izquierda de la imagen superior */
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+
+/* Imagen Papá Noel */
+.img-superior {
+    position: absolute;
+    top: 45%; /* Ajusta según necesites */
+    left: 80%;
+    transform: translateX(-50%);
+    width: 200px; /* Tamaño de la imagen encima del fondo */
+    height: auto;
+    z-index: 1; /* Asegura que esté sobre la imagen de fondo */
+}
+
+
+/* GALERÍA */
+
+.grid-wrapper {
+    padding: 1rem 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #PREGUNTAS FRECUENTES
+\*-----------------------------------*/
+
+
+.contenidopreguntas {
+    position: relative;
+    width: 100%;
+    text-align: left; 
+}
+
+.img-fondo2 {
+    width: 100%;
+    height: 240px;
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+    z-index: 0; /* Detrás de todos los elementos */
+}
+
+/* Imagen Muñeco Nieve */
+.img-superior2 {
+    position: absolute;
+    top: 25%; /* Centra verticalmente en el contenedor */
+    left: 5%; /* Posición a la izquierda */
+    transform: translateY(-50%); /* Centra la imagen verticalmente */
+    width: 260px; /* Ajusta el tamaño según prefieras */
+    height: auto;
+    z-index: 1; /* Encima de la imagen de fondo */
+}
+
+.contenidopreguntas > h1 {
+    position: absolute;
+    top: 30%; /* Posiciona el h1 un poco hacia abajo en el contenedor */
+    right: 5%; /* Alinea a la derecha */
+    color: white; /* Contraste sobre el fondo */
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    z-index: 2; /* Encima de la imagen de fondo */
+}
+
+.contenidopreguntas > p {
+    position: absolute;
+    top: 60%; /* Debajo del h1 */
+    right: 7%; /* Alinea con el h1 */
+    left: 40%;
+    text-align: right;
+    color: white;
+    z-index: 2; /* Encima de la imagen de fondo */
+}
+
+
+
+
+
+
+
+
+/* ACORDEÓN */
+.accordion-button {
+    background-color: white;
+    color: rgb(222, 0, 13);
+    font-weight: bold;
+    font-size: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+.footer {
+    background-color: rgb(222, 0, 13);
+    width: 100%;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  
+  /* footer left*/
+  
+  .footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
+  }
+  
+  .footer .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .footer .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .footer .icons {
+    margin-top: 25px;
+  }
+  
+  .footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: rgb(0, 123, 40);
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* footer center*/
+  
+  .footer .footer-center {
+    width: 30%;
+  }
+  
+  .footer .footer-center i {
+    background-color: rgb(0, 123, 40);
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer .footer-center p a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  /* footer right*/
+  
+  .footer .footer-right {
+    width: 35%;
+  }
+  
+  .footer h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer h2 span {
+    color: black;
+  }
+  
+  .footer .menu {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+    font-weight: 400;
+  }
+  
+  .footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer .menu a:hover {
+    color: rgb(0, 123, 40);
+  }
+  
+  .footer .name {
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  @media (max-width: 767px) {
+    .footer {
+      font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+  }
+
+
+
+
+
+
