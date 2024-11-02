@@ -858,6 +858,8 @@ img.img-fluid {
     .nav-menu a {
         margin: 10px 0;
     }
+
+  
 }
 
 /* Ajustes para móviles y pantallas pequeñas (menos de 480px de ancho) */
@@ -891,4 +893,6 @@ img.img-fluid {
         margin: 8px 0;
         font-size: 16px; /* Un poco más grande en móvil */
     }
+
+    
 }
