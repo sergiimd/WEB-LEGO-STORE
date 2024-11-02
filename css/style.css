@@ -122,30 +122,32 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333333;
+    background-color: rgb(0, 123, 40);
     border-bottom: 1px solid #ddd;
 }
   
 /* Redes sociales en la barra superior */
+.social-icons{
+  display: flex;
+}
+
 .social-icons a {
-    margin-right: 15px;
+    margin-right: 10px;
     color: #ffffff;
     font-size: 16px;
     text-decoration: none;
 }
   
 .shipping-info {
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center; 
+  width: 100%;
+  z-index: 1;
 }
   
-/* Ajuste de los selectores de moneda e idioma */
-.currency-language select {
-    margin-left: 15px;
-    padding: 5px;
-    border: 1px solid #ddd;
-}
+
   
 /* Barra principal: Logo, barra de búsqueda e iconos */
 .main-bar {
@@ -212,7 +214,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    background-color: #f9f9f9;
+    
 }
   
 .nav-menu a {
@@ -224,7 +226,7 @@ body {
 }
   
 .nav-menu a:hover {
-    color: #007bff;
+    color: rgb(222, 0, 13);
 }
 
 /* Icono del menú hamburguesa (oculto por defecto en pantallas grandes) */
@@ -324,7 +326,7 @@ body {
   padding: .7rem 1rem;
   font-size: 1.1rem;
   color: white;
-  background: #1680AC;
+  background: rgb(222, 0, 13);
   z-index: 1;
   border-radius: .5rem;
 }
@@ -362,7 +364,7 @@ body {
   line-height: 3rem;
   font-size: 1.1rem;
   width: 50%;
-  background: #1680AC;
+  background: rgb(222, 0, 13);
   color: white;
 }
 
@@ -371,7 +373,7 @@ body {
 }
 
 .products .box-container .box .imagep .icons a:hover{
-  background: #1680AC;
+  background: rgb(222, 0, 13);
 }
 
 .products .box-container .box .contentp{
@@ -440,11 +442,21 @@ img.img-fluid {
   border-radius: 10px; 
 }
 
+.btn-primary{
+  background-color: rgb(222, 0, 13);
+  border-color: rgb(222, 0, 13);
+}
+
+.btn-primary:hover{
+  background-color: rgb(133, 31, 38);
+  border-color: rgb(133, 31, 38);
+}
+
 /*-----------------------------------*\
   #MARCAS SETS DE LEGO
 \*-----------------------------------*/
 .slider {
-  background: #efeef2;
+  background: none;
   height: 75pt;
   margin: 0 auto;
   overflow: hidden;
@@ -721,7 +733,7 @@ img.img-fluid {
   }
   
   .footer .footer-center p a {
-    color: #FFD700;
+    color: rgb(222, 0, 13);
     text-decoration: none;
   }
   
@@ -740,7 +752,7 @@ img.img-fluid {
   }
   
   .footer h2 span {
-    color: #FFD700;
+    color: rgb(222, 0, 13);
   }
   
   .footer .menu {
@@ -758,11 +770,11 @@ img.img-fluid {
   }
   
   .footer .menu a:hover {
-    color: #FFD700;
+    color: rgb(222, 0, 13);
   }
   
   .footer .name {
-    color: #FFD700;
+    color: rgb(222, 0, 13);
     font-size: 14px;
     font-weight: normal;
     margin: 0;

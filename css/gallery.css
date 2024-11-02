@@ -85,69 +85,58 @@
     }
     }
     
-    
-    
-    
-    /*-----------------------------------*\
-      #HEADER
-    \*-----------------------------------*/
-    
-    /* Eliminar márgenes y padding predeterminados del navegador */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Roboto", sans-serif;
-    }
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  border-bottom: 1px solid #ddd;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(0, 123, 40);
+  border-bottom: 1px solid #ddd;
+}
+
+.social-icons{
+display: flex;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.shipping-info {
+font-size: 14px;
+color: #ffffff;
+font-weight: 400;
+text-align: center; 
+width: 100%;
+z-index: 1;
+}
       
-    body {
-        font-family: "Roboto", sans-serif;
-    }
-      
-    
-    /* Asegurar que el navbar ocupe el 100% del ancho */
-    .navbar {
-        width: 100%;
-        display: flex;
-        flex-direction: column; /* Ordena las barras una debajo de la otra */
-        border-bottom: 1px solid #ddd;
-    }
-      
-    
-    /* Barra superior: Redes sociales, envío gratuito y selector de moneda/idioma */
-    .top-bar {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: rgb(222, 0, 13);
-        border-bottom: 1px solid #ddd;
-    }
-      
-    /* Redes sociales en la barra superior */
-    .social-icons a {
-        margin-right: 15px;
-        color: #ffffff;
-        font-size: 16px;
-        text-decoration: none;
-    }
-      
-    .shipping-info {
-        font-size: 14px;
-        color: #ffffff;
-        font-weight: 400;
-    }
-      
-    /* Ajuste de los selectores de moneda e idioma */
-    .currency-language select {
-        margin-left: 15px;
-        padding: 5px;
-        border: 1px solid #ddd;
-    }
-      
-    /* Barra principal: Logo, barra de búsqueda e iconos */
-    .main-bar {
+.main-bar {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -157,7 +146,7 @@
         border-bottom: 1px solid #ddd;
     }
     
-    /* LOGO NAVIDEÑO */
+/* LOGO NAVIDEÑO */
     .logo img {
       width: 90px;
       height: auto;
@@ -211,7 +200,7 @@
         display: flex;
         justify-content: center;
         padding: 10px 0;
-        background-color: #f9f9f9;
+        background-color: none;
     }
       
     .nav-menu a {
@@ -223,10 +212,9 @@
     }
       
     .nav-menu a:hover {
-        color: #007bff;
+        color: rgb(222, 0, 13);
     }
     
-    /* Icono del menú hamburguesa (oculto por defecto en pantallas grandes) */
     .hamburger-menu {
         display: none;
         cursor: pointer;
@@ -238,10 +226,9 @@
         padding: 10px;
     }
     
-    /* Mostrar el menú hamburguesa y ocultar el menú normal en pantallas pequeñas */
     @media (max-width: 768px) {
         .nav-menu {
-            display: none; /* Oculta el menú de navegación por defecto */
+            display: none; 
             flex-direction: column;
             position: absolute;
             top: 60px;
@@ -261,28 +248,21 @@
         }
     
         .hamburger-menu {
-            display: block; /* Mostramos el menú hamburguesa */
+            display: block; 
         }
     }
-    
-    /* Menú desplegado cuando se hace clic en el icono */
+  
     .nav-menu.active {
         display: flex;
     }
 
-
-
-
-    
 /*-----------------------------------*\
   #LADRILLOS Y PIEZAS
 \*-----------------------------------*/
-
 .img-fondo {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    margin-bottom: 5%;
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
   }
 
 .contenidoladrillos > h1 {
@@ -291,17 +271,17 @@
     color: black;
     margin: 3%;
     position: absolute;
-    top: 50%; /* Ajusta esta posición según necesites */
-    left: 18%;
-    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
-    padding: 10px 20px; /* Espaciado alrededor del texto */
-    border-radius: 8px; /* Bordes redondeados, opcional */
+    top: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px; 
+    border-radius: 8px; 
 }
 
 .contenidoladrillos > p {
     position: absolute;
-    top: 66%; /* Posiciona debajo del h1 */
-    left: 35%; /* Ajusta para que quede a la izquierda de la imagen superior */
+    top: 58%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
     color: black;
     padding: 5px 10px;
@@ -309,21 +289,22 @@
     z-index: 2;
 }
 
-
-/* Imagen Papá Noel */
+/*-----------------------------------*\
+  #Imagen Papá Noel
+\*-----------------------------------*/
 .img-superior {
     position: absolute;
-    top: 45%; /* Ajusta según necesites */
+    top: 45%;
     left: 80%;
     transform: translateX(-50%);
-    width: 200px; /* Tamaño de la imagen encima del fondo */
+    width: 200px; 
     height: auto;
-    z-index: 1; /* Asegura que esté sobre la imagen de fondo */
+    z-index: 1; 
 }
 
-
-/* GALERÍA */
-
+/*-----------------------------------*\
+  #GALERÍA
+\*-----------------------------------*/
 .grid-wrapper {
     padding: 1rem 0;
     display: grid;
@@ -357,15 +338,18 @@
     grid-row: span 2;
 }
 
-
-
-
+/*-----------------------------------*\
+  #BANNER SANTA
+\*-----------------------------------*/
+img.img-fluid {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+}
 
 /*-----------------------------------*\
   #PREGUNTAS FRECUENTES
 \*-----------------------------------*/
-
-
 .contenidopreguntas {
     position: relative;
     width: 100%;
@@ -375,50 +359,55 @@
 .img-fondo2 {
     width: 100%;
     height: 240px;
-    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
-    z-index: 0; /* Detrás de todos los elementos */
+    object-fit: cover; 
+    z-index: 0; 
 }
 
 /* Imagen Muñeco Nieve */
 .img-superior2 {
     position: absolute;
-    top: 25%; /* Centra verticalmente en el contenedor */
-    left: 5%; /* Posición a la izquierda */
-    transform: translateY(-50%); /* Centra la imagen verticalmente */
-    width: 260px; /* Ajusta el tamaño según prefieras */
+    top: 25%; 
+    left: 5%; 
+    transform: translateY(-50%); 
+    width: 260px; 
     height: auto;
-    z-index: 1; /* Encima de la imagen de fondo */
+    z-index: 1; 
 }
 
 .contenidopreguntas > h1 {
     position: absolute;
-    top: 30%; /* Posiciona el h1 un poco hacia abajo en el contenedor */
-    right: 5%; /* Alinea a la derecha */
-    color: white; /* Contraste sobre el fondo */
+    top: 30%; 
+    right: 5%; 
+    color: white; 
     font-size: 3.5em;
     font-weight: bold;
     padding: 10px 20px;
-    z-index: 2; /* Encima de la imagen de fondo */
+    z-index: 2; 
 }
 
 .contenidopreguntas > p {
     position: absolute;
-    top: 60%; /* Debajo del h1 */
-    right: 7%; /* Alinea con el h1 */
+    top: 60%; 
+    right: 7%; 
     left: 40%;
     text-align: right;
     color: white;
-    z-index: 2; /* Encima de la imagen de fondo */
+    z-index: 2; 
 }
 
+.photo-gallery .gallery-item {
+  display: block; 
+}
 
+.photo-gallery img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover;
+}
 
-
-
-
-
-
-/* ACORDEÓN */
+/*-----------------------------------*\
+  #ACORDEÓN
+\*-----------------------------------*/
 .accordion-button {
     background-color: white;
     color: rgb(222, 0, 13);
@@ -426,171 +415,154 @@
     font-size: 0.5em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-  
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 .footer {
-    background-color: rgb(222, 0, 13);
-    width: 100%;
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 50px;
-    margin-top: 50px;
-  }
-  
-  .footer .footer-left,
-  .footer .footer-center,
-  .footer .footer-right {
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  
-  /* footer left*/
-  
-  .footer .footer-left {
-    width: 33%;
-    padding-right: 15px;
-  }
-  
-  .footer .about {
-    line-height: 20px;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 400;
-    margin: 0;
-  }
-  
-  .footer .about span {
-    display: block;
-    color: #ffffff;
-    font-size: 14px;
-    margin-bottom: 20px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .footer .icons {
-    margin-top: 25px;
-  }
-  
-  .footer .icons a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: rgb(0, 123, 40);
-    border-radius: 2px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-  }
-  
-  
-  /* footer center*/
-  
-  .footer .footer-center {
-    width: 30%;
-  }
-  
-  .footer .footer-center i {
-    background-color: rgb(0, 123, 40);
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
-  }
-  
-  .footer .footer-center i.fa-envelope {
-    font-size: 17px;
-    line-height: 38px;
-  }
-  
-  .footer .footer-center p {
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin: 0;
-    font-weight: 400;
-  }
-  
-  .footer .footer-center p span {
-    display: block;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
-  }
-  
-  .footer .footer-center p a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  
-  /* footer right*/
-  
-  .footer .footer-right {
-    width: 35%;
-  }
-  
-  .footer h2 {
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: normal;
-    margin: 0;
-  }
-  
-  .footer h2 span {
-    color: black;
-  }
-  
-  .footer .menu {
-    color: #ffffff;
-    margin: 20px 0 12px;
-    padding: 0;
-    font-weight: 400;
-  }
-  
-  .footer .menu a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .footer .menu a:hover {
-    color: rgb(0, 123, 40);
-  }
-  
-  .footer .name {
-    color: black;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-  }
+  background-color: #333333;
+  width: 100%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* footer left*/
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #333333;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: rgb(222, 0, 13);
+  text-decoration: none;
+}
+
+/* footer right*/
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: rgb(222, 0, 13);
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+  font-weight: 400;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: rgb(222, 0, 13);
+}
+
+.footer .name {
+  color: rgb(222, 0, 13);
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
   
   @media (max-width: 767px) {
     .footer {
@@ -608,9 +580,3 @@
       margin-left: 0;
     }
   }
-
-
-
-
-
-
