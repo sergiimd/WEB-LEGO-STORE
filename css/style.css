@@ -264,15 +264,22 @@ body {
     }
 
     .hamburger-menu {
-        display: block; /* Mostramos el menú hamburguesa */
+        display: block; 
     }
 }
 
-/* Menú desplegado cuando se hace clic en el icono */
 .nav-menu.active {
     display: flex;
 }
 
+/* MODAL */
+.button-container {
+  position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1051; 
+}
 
 
 /*-----------------------------------*\
@@ -284,14 +291,21 @@ body {
   object-fit: cover;
 }
 
-.carousel-caption {
-  position: absolute;
-  bottom: 20rem;
-  left: 65%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  color: white;
-  text-align: center;
+#carouselExampleCaptions {
+  position: relative;
+  z-index: 1; 
+}
+
+.carousel-inner > .carousel-item > div > h5  {
+  color: black;
+}
+
+.carousel-inner > .carousel-item > div > p {
+  color: black;
+}
+
+.modal-backdrop.show {
+  z-index: 1050 !important; 
 }
 
 /*-----------------------------------*\
@@ -303,7 +317,6 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-
 
 .products .box-container {
   display: flex;

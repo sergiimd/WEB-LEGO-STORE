@@ -4,8 +4,6 @@ $(document).ready(function () {
     });
 });
 
-
-
 // LOGO LEGO CAMBIO IMAGEN
 var logo = $("#logolego");
 
@@ -18,7 +16,6 @@ logo.hover(
     }
 );
 
-
 // EFECTO GALERÍA
 ScrollReveal().reveal(".grid-wrapper > div", {
     delay: 200,
@@ -27,16 +24,4 @@ ScrollReveal().reveal(".grid-wrapper > div", {
     origin: "bottom",
     scale: 0.9,
 });
-
-
-// SLIDER SLICK
-
-  
-
-
-
-
-
-
-
 

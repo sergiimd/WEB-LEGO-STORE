@@ -96,43 +96,77 @@
 
 
 <!-- CARRUSEL INICIO -->
+<div class="button-container">
+    <button type="button" class="botonmodal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Descubre nuestra historia
+    </button>
+</div>
+
+<!-- Modal -->
+<!-- Botón de Apertura del Modal -->
+<div class="button-container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Descubre nuestra historia
+    </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Descubre nuestra historia</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                LEGO fue fundado en 1932 en Dinamarca por Ole Kirk Christiansen, un carpintero que comenzó fabricando juguetes de madera. En 1949, la compañía introdujo los primeros bloques de plástico llamados "Automatic Binding Bricks", que sentaron las bases de los actuales ladrillos LEGO. Estos bloques, con su diseño de encaje y gran versatilidad, revolucionaron el concepto de juego al permitir construcciones sólidas y fácilmente desmontables. En 1958, el hijo de Ole, Godtfred Kirk Christiansen, perfeccionó el sistema de encaje, creando el ladrillo LEGO tal como lo conocemos hoy. Desde entonces, LEGO ha evolucionado para convertirse en un icono mundial del juego creativo, inspirando a generaciones enteras con sets temáticos, películas, videojuegos y parques temáticos.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carrusel -->
 <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/w2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-item">
-      <img src="img/w2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/fondo1final.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Disfruta de la Navidad con LEGO</h5>
+                <p>¡Encuentra los mejores sets!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/fondo2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Disfruta de la Navidad con LEGO</h5>
+                <p>¡Encuentra los mejores sets!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/fondo3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Disfruta de la Navidad con LEGO</h5>
+                <p>¡Encuentra los mejores sets!</p>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="img/w3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
 
 <!-- MARCAS SETS DE LEGO -->
@@ -285,7 +319,7 @@
                   <img src="img/jardin.webp" class="card-img-top" alt="LEGO Logo">
                   <div class="card-body">
                       <h5 class="card-title">Jardín Botánico</h5>
-                      <p class="card-text">Descripción breve del contenido del card 1.</p>
+                      <p class="card-text">Construye un espectacular modelo inspirado por una fan de un elegante jardín botánico del siglo XIX.</p>
                       <a href="#" class="btn btn-primary">Añadir a la cesta</a>
                   </div>
               </div>
@@ -295,7 +329,7 @@
                   <img src="img/arbol.webp" class="card-img-top" alt="LEGO Logo">
                   <div class="card-body">
                       <h5 class="card-title">Gran Árbol Deku “2 en 1”</h5>
-                      <p class="card-text">Descripción breve del contenido del card 2.</p>
+                      <p class="card-text">Construye el icónico árbol de Ocarina of Time o Breath of the Wild y revive la leyenda.</p>
                       <a href="#" class="btn btn-primary">Añadir a la cesta</a>
                   </div>
               </div>
@@ -305,7 +339,7 @@
                   <img src="img/bus.webp" class="card-img-top" alt="LEGO Logo">
                   <div class="card-body">
                       <h5 class="card-title">Autobús de batalla</h5>
-                      <p class="card-text">Descripción breve del contenido del card 3.</p>
+                      <p class="card-text">Los nuevos sets de LEGO® Fortnite® llevan la diversión del videojuego a la vida real.</p>
                       <a href="#" class="btn btn-primary">Añadir a la cesta</a>
                   </div>
               </div>
@@ -315,7 +349,7 @@
                   <img src="img/tiburon.webp" class="card-img-top" alt="LEGO Logo">
                   <div class="card-body">
                       <h5 class="card-title">Tiburón</h5>
-                      <p class="card-text">Descripción breve del contenido del card 4.</p>
+                      <p class="card-text">Construye el set inspirado en las ideas de los fans definitivo que recrea la película.</p>
                       <a href="#" class="btn btn-primary">Añadir a la cesta</a>
                   </div>
               </div>

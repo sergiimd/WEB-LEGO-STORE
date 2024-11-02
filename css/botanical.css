@@ -260,6 +260,13 @@ height: auto;
         display: flex;
     }
 
+h1 {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
 /*-----------------------------------*\
   #BANNER SANTA
 \*-----------------------------------*/
