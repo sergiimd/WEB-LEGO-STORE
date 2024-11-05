@@ -3,7 +3,6 @@
   /*-----------------------------------*\
     #COLORES
   \*-----------------------------------*/
-    
       --GRIS: #333333;
       --BLANCO: #ffffff;
       --AMARILLO: #FFD700;
@@ -11,7 +10,6 @@
   /*-----------------------------------*\
     #TIPOGRAFÍAS
   \*-----------------------------------*/
-    
   .roboto-thin {
       font-family: "Roboto", sans-serif;
       font-weight: 100;
@@ -145,8 +143,10 @@ z-index: 1;
       background-color: #fff;
       border-bottom: 1px solid #ddd;
   }
-  
-/* LOGO NAVIDEÑO */
+
+/*-----------------------------------*\
+  #LOGO NAVIDEÑO
+\*-----------------------------------*/
   .logo img {
     width: 90px;
     height: auto;
@@ -173,8 +173,10 @@ z-index: 1;
       border-radius: 0 20px 20px 0;
       cursor: pointer;
   }
-    
-  /* Iconos en la barra principal */
+
+/*-----------------------------------*\
+  #Iconos en la barra principal
+\*-----------------------------------*/
   .icons a {
       margin-left: 20px;
       font-size: 18px;
@@ -193,8 +195,10 @@ z-index: 1;
       font-size: 10px;
       padding: 2px 5px;
   }
-    
-  /* Menú de navegación */
+
+/*-----------------------------------*\
+  #Menú de navegación
+\*-----------------------------------*/
   .nav-menu {
       width: 100%;
       display: flex;
@@ -202,7 +206,7 @@ z-index: 1;
       padding: 10px 0;
       background-color: none;
   }
-    
+
   .nav-menu a {
       margin: 0 15px;
       color: #333;
@@ -349,9 +353,9 @@ height: 300px;
 object-fit: cover;
 }
 
-
-/* <!-- PRUEBA CARDS MODAL --> */
-
+/*-----------------------------------*\
+#CARDS MODAL
+\*-----------------------------------*/
 #piezasvendidas {
 display: flex; 
 flex-direction: column; 
@@ -395,8 +399,9 @@ padding: 5%;
 }
 
 
-/* MODAL */
-
+/*-----------------------------------*\
+#MODAL
+\*-----------------------------------*/
 .botonmodal {
 font-size: 1em;
 background: rgb(222, 0, 13);
@@ -412,12 +417,12 @@ background-color: rgb(133, 31, 38);
  
 }
 
-/* INTERIOR MODAL */
-
+/*-----------------------------------*\
+#INTERIOR MODAL
+\*-----------------------------------*/
 .carousel-item {
 padding: 15%;
 }
-
 
 .btn-secondary {
 background: rgb(222, 0, 13);
@@ -428,20 +433,6 @@ border: none;
 .btn-secondary:hover {
 background: rgb(133, 31, 38);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-----------------------------------*\
 #PREGUNTAS FRECUENTES
@@ -459,7 +450,9 @@ background: rgb(133, 31, 38);
   z-index: 0; 
 }
 
-/* Imagen Muñeco Nieve */
+/*-----------------------------------*\
+#MUÑECO DE NIEVE
+\*-----------------------------------*/
 .img-superior2 {
   position: absolute;
   top: 25%; 
@@ -524,11 +517,6 @@ color: white;
 padding: 2%;
 }
 
-
-
-
-
-
 /*-----------------------------------*\
 #FOOTER
 \*-----------------------------------*/
@@ -550,7 +538,7 @@ display: inline-block;
 vertical-align: top;
 }
 
-/* footer left*/
+/* footer izq*/
 .footer .footer-left {
 width: 33%;
 padding-right: 15px;
@@ -593,7 +581,7 @@ margin-right: 3px;
 margin-bottom: 5px;
 }
 
-/* footer center*/
+/* footer medio*/
 
 .footer .footer-center {
 width: 30%;
@@ -637,7 +625,7 @@ color: rgb(222, 0, 13);
 text-decoration: none;
 }
 
-/* footer right*/
+/* footer drch*/
 .footer .footer-right {
 width: 35%;
 }
@@ -693,4 +681,176 @@ margin: 0;
   .footer .footer-center i {
     margin-left: 0;
   }
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+  
+  /* Ajustes para tablet (menos de 768px de ancho) */
+  @media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .main-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-bar input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+    }
+
+    .contenidoladrillos {
+      position: relative;
+      text-align: center;
+  }
+
+  .img-fondo {
+      width: 100vw;
+      height: 250px; 
+  }
+
+  .contenidoladrillos > h1 {
+      font-size: 2rem;
+      padding: 5px 10px;
+      top: 40%;
+  }
+
+  .contenidoladrillos > p {
+      font-size: 0.8rem;
+      top: 70%;
+      padding: 5px;
+  }
+
+  .img-superior {
+      top: 115%; 
+      left: 50%;
+      width: 150px; 
+  }
+
+  .img-fondo2 {
+    width: 100vw;
+    height: 250px; 
+}
+
+.contenidopreguntas > h1 {
+    font-size: 2rem;
+    padding: 5px 10px;
+    top: 30%;
+}
+
+.contenidopreguntas > p {
+    font-size: 0.8rem;
+    top: 50%;
+    padding: 5px;
+}
+
+.img-superior2 {
+    width: 30%; 
+}
+}
+
+/* Ajustes para móviles (menos de 480px de ancho) */
+@media (max-width: 480px) {
+    .top-bar {
+        flex-direction: column;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .main-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        margin: 8px 0;
+        font-size: 16px; 
+    }
+
+  .contenidoladrillos {
+      position: relative;
+      text-align: center;
+  }
+
+  .img-fondo {
+      width: 100vw;
+      height: 250px; 
+  }
+
+  .contenidoladrillos > h1 {
+      font-size: 2rem;
+      padding: 5px 10px;
+  }
+
+  .contenidoladrillos > p {
+      font-size: 0.8rem;
+      top: 82%;
+      padding: 5px;
+  }
+
+  .img-superior {
+      top: 115%; 
+      left: 50%;
+      width: 150px; 
+  }
+
+.img-superior2 {
+    width: 30%;
+    top: 50%; 
+}
+
+.img-fondo2 {
+  width: 100vw;
+  height: 250px; 
+}
+
+.contenidopreguntas > h1 {
+  font-size: 2rem;
+  padding: 5px 10px;
+  top: 10%;
+}
+
+.contenidopreguntas > p {
+  font-size: 0.8rem;
+  top: 30%;
+  padding: 5px;
+}
 }

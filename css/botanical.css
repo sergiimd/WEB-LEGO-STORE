@@ -3,7 +3,6 @@
     /*-----------------------------------*\
       #COLORES
     \*-----------------------------------*/
-      
         --GRIS: #333333;
         --BLANCO: #ffffff;
         --AMARILLO: #FFD700;
@@ -11,7 +10,6 @@
     /*-----------------------------------*\
       #TIPOGRAFÍAS
     \*-----------------------------------*/
-      
     .roboto-thin {
         font-family: "Roboto", sans-serif;
         font-weight: 100;
@@ -85,32 +83,28 @@
     }
     }
     
-    
-    
-    
 /*-----------------------------------*\
-  #HEADER
+#HEADER
 \*-----------------------------------*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-body {
+  }
+  
+  body {
   font-family: "Roboto", sans-serif;
-}
-
-.navbar {
+  }
+  
+  .navbar {
   width: 100%;
   display: flex;
   flex-direction: column; 
   border-bottom: 1px solid #ddd;
-}
-
-.top-bar {
+  }
+  
+  .top-bar {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -118,147 +112,153 @@ body {
   padding: 10px 20px;
   background-color: rgb(46, 46, 46);
   border-bottom: 1px solid #ddd;
-}
-
-/* Redes sociales */
-.social-icons{
-display: flex;
-}
-
-.social-icons a {
+  }
+  
+  .social-icons{
+  display: flex;
+  }
+  
+  .social-icons a {
   margin-right: 10px;
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
-}
-
-.shipping-info {
-font-size: 14px;
-color: #ffffff;
-font-weight: 400;
-text-align: center; 
-width: 100%;
-z-index: 1;
-}
-
-/* Barra principal */
-.main-bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-/* LOGO NAVIDEÑO */
-.logo img {
-width: 90px;
-height: auto;
-}
-
-.search-bar {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  margin-right: 20px;
-}
-
-.search-bar input {
-  padding: 8px 15px;
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 20px 0 0 20px;
-}
-
-.search-bar button {
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 0 20px 20px 0;
-  cursor: pointer;
-}
-
-.icons a {
-  margin-left: 20px;
-  font-size: 18px;
-  color: #333;
-  position: relative;
-  text-decoration: none;
-}
-
-.icons a .badge {
-  position: absolute;
-  top: -5px;
-  right: -10px;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  font-size: 10px;
-  padding: 2px 5px;
-}
-
-.nav-menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+  }
   
+  .shipping-info {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center; 
+  width: 100%;
+  z-index: 1;
+  }
+      
+  .main-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+  
+/*-----------------------------------*\
+  #LOGO NAVIDEÑO
+\*-----------------------------------*/
+.logo img {
+  width: 90px;
+  height: auto;
+}
+  
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-right: 20px;
+}
+  
+.search-bar input {
+    padding: 8px 15px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+}
+  
+.search-bar button {
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+/*-----------------------------------*\
+#Iconos en la barra principal
+\*-----------------------------------*/
+.icons a {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    text-decoration: none;
+}
+  
+.icons a .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+
+/*-----------------------------------*\
+#Menú de navegación
+\*-----------------------------------*/
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: none;
 }
 
 .nav-menu a {
-  margin: 0 15px;
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
 }
-
+  
 .nav-menu a:hover {
-  color: rgb(222, 0, 13);
+    color: rgb(222, 0, 13);
 }
 
 .hamburger-menu {
-  display: none;
-  cursor: pointer;
+    display: none;
+    cursor: pointer;
+}
+  
+.hamburger-menu i {
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
 }
 
-.hamburger-menu i {
-  font-size: 24px;
-  color: #333;
-  padding: 10px;
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+        font-size: 16px;
+        padding: 10px 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
 }
-    
-    @media (max-width: 768px) {
-        .nav-menu {
-            display: none; 
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            padding: 20px;
-            z-index: 1000;
-        }
-    
-        .nav-menu a {
-            margin: 10px 0;
-            font-size: 16px;
-            padding: 10px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-    
-        .hamburger-menu {
-            display: block; 
-        }
-    }
-    
+
 .nav-menu.active {
-        display: flex;
-    }
+    display: flex;
+}
 
 h1 {
       font-weight: bold;
@@ -382,7 +382,7 @@ footer {
 }
 
 /*-----------------------------------*\
-  #FOOTER
+#FOOTER
 \*-----------------------------------*/
 .footer {
   background-color: rgb(46, 46, 46);
@@ -393,30 +393,30 @@ footer {
   font-size: 16px;
   padding: 50px;
   margin-top: 50px;
-}
-
-.footer .footer-left,
-.footer .footer-center,
-.footer .footer-right {
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
   display: inline-block;
   vertical-align: top;
-}
-
-/* footer left*/
-.footer .footer-left {
+  }
+  
+  /* footer izq*/
+  .footer .footer-left {
   width: 33%;
   padding-right: 15px;
-}
-
-.footer .about {
+  }
+  
+  .footer .about {
   line-height: 20px;
   color: #ffffff;
   font-size: 13px;
   font-weight: 400;
   margin: 0;
-}
-
-.footer .about span {
+  }
+  
+  .footer .about span {
   display: block;
   color: #ffffff;
   font-size: 14px;
@@ -424,13 +424,13 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-
-.footer .icons {
+  }
+  
+  .footer .icons {
   margin-top: 25px;
-}
-
-.footer .icons a {
+  }
+  
+  .footer .icons a {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -443,14 +443,15 @@ footer {
   line-height: 35px;
   margin-right: 3px;
   margin-bottom: 5px;
-}
-
-/* footer center*/
-.footer .footer-center {
+  }
+  
+  /* footer medio*/
+  
+  .footer .footer-center {
   width: 30%;
-}
-
-.footer .footer-center i {
+  }
+  
+  .footer .footer-center i {
   background-color: #333333;
   color: #ffffff;
   font-size: 25px;
@@ -461,73 +462,73 @@ footer {
   line-height: 42px;
   margin: 10px 15px;
   vertical-align: middle;
-}
-
-.footer .footer-center i.fa-envelope {
+  }
+  
+  .footer .footer-center i.fa-envelope {
   font-size: 17px;
   line-height: 38px;
-}
-
-.footer .footer-center p {
+  }
+  
+  .footer .footer-center p {
   display: inline-block;
   color: #ffffff;
   vertical-align: middle;
   margin: 0;
   font-weight: 400;
-}
-
-.footer .footer-center p span {
+  }
+  
+  .footer .footer-center p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
-}
-
-.footer .footer-center p a {
+  }
+  
+  .footer .footer-center p a {
   color: rgb(222, 0, 13);
   text-decoration: none;
-}
-
-/* footer right*/
-.footer .footer-right {
+  }
+  
+  /* footer drch*/
+  .footer .footer-right {
   width: 35%;
-}
-
-.footer h2 {
+  }
+  
+  .footer h2 {
   color: #ffffff;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
-}
-
-.footer h2 span {
+  }
+  
+  .footer h2 span {
   color: rgb(222, 0, 13);
-}
-
-.footer .menu {
+  }
+  
+  .footer .menu {
   color: #ffffff;
   margin: 20px 0 12px;
   padding: 0;
   font-weight: 400;
-}
-
-.footer .menu a {
+  }
+  
+  .footer .menu a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
-}
-
-.footer .menu a:hover {
+  }
+  
+  .footer .menu a:hover {
   color: rgb(222, 0, 13);
-}
-
-.footer .name {
+  }
+  
+  .footer .name {
   color: rgb(222, 0, 13);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
-}
+  }
   
   @media (max-width: 767px) {
     .footer {
@@ -545,3 +546,77 @@ footer {
       margin-left: 0;
     }
   }
+
+    /* ----------- RESPONSIVE DESIGN ----------- */
+  
+  /* Ajustes para tablets (menos de 768px de ancho) */
+  @media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .main-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-bar input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+    }
+}
+
+/* Ajustes para móviles (menos de 480px de ancho) */
+@media (max-width: 480px) {
+    .top-bar {
+        flex-direction: column;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .main-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar input {
+        width: 90%; 
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu a {
+        margin: 8px 0;
+        font-size: 16px; 
+    }
+}
