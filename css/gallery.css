@@ -345,7 +345,7 @@ object-fit: cover;
 }
 
 /*-----------------------------------*\
-#BANNER SANTA
+#BANNER BRICKS
 \*-----------------------------------*/
 img.img-fluid {
 width: 100vw;
@@ -354,7 +354,7 @@ object-fit: cover;
 }
 
 /*-----------------------------------*\
-#CARDS MODAL
+#PIEZAS VENDIDAS
 \*-----------------------------------*/
 #piezasvendidas {
 display: flex; 
@@ -400,7 +400,7 @@ padding: 5%;
 
 
 /*-----------------------------------*\
-#MODAL
+#MODAL CARD
 \*-----------------------------------*/
 .botonmodal {
 font-size: 1em;
@@ -418,7 +418,7 @@ background-color: rgb(133, 31, 38);
 }
 
 /*-----------------------------------*\
-#INTERIOR MODAL
+#INTERIOR MODAL CARD
 \*-----------------------------------*/
 .carousel-item {
 padding: 15%;
@@ -433,6 +433,7 @@ border: none;
 .btn-secondary:hover {
 background: rgb(133, 31, 38);
 }
+
 
 /*-----------------------------------*\
 #PREGUNTAS FRECUENTES
@@ -516,6 +517,8 @@ font-size: 1.25em;
 color: white;
 padding: 2%;
 }
+
+
 
 /*-----------------------------------*\
 #FOOTER
