@@ -25,3 +25,6 @@ ScrollReveal().reveal(".grid-wrapper > div", {
     scale: 0.9,
 });
 
+
+// AOS
+AOS.init();

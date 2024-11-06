@@ -16,8 +16,8 @@
         <link rel="stylesheet" href="css/lightbox.css">
 
         <!-- AOS CSS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-       
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">     
+
         <!-- JQUERY -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
@@ -213,8 +213,11 @@
 
 <!-- TIENDA -->
 <section class="products" id="products">
-    <h1>¡Especial navidad!</h1>
-    <div class="box-container">
+    <div data-aos="fade-right" >
+        <h1 class="titulo1">¡Especial navidad!</h1>
+    </div>
+   
+    <div data-aos="fade-left" class="box-container">
         <div class="box">
             <span class="discount">-10%</span>
             <div class="imagep">
@@ -294,12 +297,14 @@
 </section>
 
 <!-- BANNER -->
-<img src="img/w2.jpg" class="img-fluid" alt="...">
+<img data-aos="fade-right" src="img/w2.jpg" class="img-fluid" alt="...">
 
 <!-- SETS DESTACADOS -->
 <section id="destacados">
-    <h1>¡Sets destacados!</h1>
-  <div class="container text-center">
+    <div data-aos="fade-right" >
+        <h1 class="titulo1">¡Set destacados!</h1>
+    </div>
+  <div data-aos="fade-left" class="container text-center">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
           <div class="col">
               <div class="card" style="width: 100%;">
@@ -388,8 +393,11 @@
 
 <!-- TEMÁTICAS -->
 <section id="tematicas">
-    <h1>¡Categorías!</h1>
-    <div class="cards">
+    <div data-aos="fade-right" >
+        <h1 class="titulo1">¡Categorías!</h1>
+    </div>
+
+    <div data-aos="fade-left" class="cards">
 
       
     <div class="card" style="width: 18rem;">
@@ -429,7 +437,7 @@
 </section>
 
 <!-- BANNER -->
-<img src="img/flores.png" class="img-fluid" alt="...">
+<img data-aos="fade-right" src="img/flores.png" class="img-fluid" alt="...">
 
 <!-- SVG ICONS -->
         <svg class="d-none" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -489,5 +497,8 @@
 
         <!-- JAVASCRIPT -->
          <script src="js/script.js"></script>
+
+         <!-- JAVASCRIPT AOS -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </body>
 </html>

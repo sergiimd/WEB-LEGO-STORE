@@ -328,7 +328,7 @@
   /*-----------------------------------*\
     #TIENDA
   \*-----------------------------------*/
-  .products > h1 {
+  .products > div >  .titulo1  {
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
@@ -444,7 +444,8 @@
   /*-----------------------------------*\
     #SETS DESTACADOS
   \*-----------------------------------*/
-  #destacados > h1 {
+
+  #destacados > div > .titulo1 {
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
@@ -588,7 +589,7 @@
     margin-bottom: 20px; 
   }
   
-  #tematicas > h1 {
+  #tematicas > div > h1 {
     font-weight: bold; 
     text-align: center; 
     margin-bottom: 20px;
