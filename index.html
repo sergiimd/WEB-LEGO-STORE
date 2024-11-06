@@ -93,8 +93,8 @@
 <!-- Modal -->
 <!-- Botón de Apertura del Modal -->
 <div class="button-container">
-    <button type="button" class="botonmodal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Conoce nuestra historia...
+    <button data-aos="fade-right" type="button" class="botonmodal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Conoce nuestra historia
     </button>
 </div>
 
@@ -128,8 +128,8 @@
         <div class="carousel-item active">
             <img src="img/fondo1final.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>¡Disfruta de la Navidad con LEGO!</h5>
-                <p>Encuentra los mejores sets para estas Navidades y sorprende a los tuyos con regalos increíbles.</p>
+                <h5 data-aos="fade-right">¡Disfruta de la Navidad con LEGO!</h5>
+                <p data-aos="fade-left">Encuentra los mejores sets para estas Navidades y sorprende a los tuyos con regalos increíbles.</p>
             </div>
         </div>
         <div class="carousel-item">
@@ -396,10 +396,7 @@
     <div data-aos="fade-right" >
         <h1 class="titulo1">¡Categorías!</h1>
     </div>
-
     <div data-aos="fade-left" class="cards">
-
-      
     <div class="card" style="width: 18rem;">
         <img src="img/luke.avif" class="card-img-top" alt="...">
         <div class="card-body">
@@ -407,7 +404,6 @@
           <a href="#" class="btn btn-primary">¡Encuentra tu set!</a>
         </div>
       </div>
-
       <div class="card" style="width: 18rem;">
         <img src="img/McLaren_P1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -415,7 +411,6 @@
           <a href="#" class="btn btn-primary">¡Encuentra tu set!</a>
         </div>
       </div>
-
       <div class="card" style="width: 18rem;">
         <img src="img/CITY2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -423,7 +418,6 @@
           <a href="#" class="btn btn-primary">¡Encuentra tu set!</a>
         </div>
       </div>
-
       <div class="card" style="width: 18rem;">
         <img src="img/flores2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -431,13 +425,23 @@
           <a href="botanical.html" class="btn btn-primary">¡Encuentra tu set!</a>
         </div>
       </div>
-
     </div>
     <button type="button" class="btn btn-primary">Ver más</button>
 </section>
 
-<!-- BANNER -->
-<img data-aos="fade-right" src="img/flores.png" class="img-fluid" alt="...">
+<!-- SLIDER JQUERY FLORES -->
+<section data-aos="fade-left" id="carousel">
+    <div class="slide-image" id="slide1">
+    </div>
+    <div class="slide-image" id="slide2">
+    </div>
+    <div class="slide-image" id="slide3">
+    </div>
+    <div class="slide-image" id="slide4">
+    </div>
+    <div class="slide-image" id="slide5">
+    </div>
+  </section>
 
 <!-- SVG ICONS -->
         <svg class="d-none" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -485,8 +489,7 @@
                 <a href="#"> INICIO</a> |
                 <a href="#"> COMPRAR</a> |
                 <a href="#"> REBAJAS</a> |
-                <a href="#"> CATEGORÍAS</a> |
-                
+                <a href="#"> CATEGORÍAS</a> |     
               </p>
               <p class="name"> &copy;2024 The LEGO Group.</p>
             </div>

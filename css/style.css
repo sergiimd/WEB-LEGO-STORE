@@ -4,11 +4,11 @@
   /*-----------------------------------*\
     #COLORES
   \*-----------------------------------*/
-    
-      --GRIS: #333333;
-      --BLANCO: #ffffff;
-      --AMARILLO: #FFD700;
-    
+  --GRIS: #333333;
+  --BLANCO: #ffffff;
+  --AMARILLO: #FFD700;
+  --ROJO: rgb(222, 0, 13);
+
   /*-----------------------------------*\
     #TIPOGRAFÍAS
   \*-----------------------------------*/
@@ -444,7 +444,6 @@
   /*-----------------------------------*\
     #SETS DESTACADOS
   \*-----------------------------------*/
-
   #destacados > div > .titulo1 {
     font-weight: bold;
     text-align: center;
@@ -624,8 +623,57 @@
   #tematicas > button {
     margin-top: 60px;
   }
-   
-  /*-----------------------------------*\
+
+/*-----------------------------------*\
+#SLIDER JQUERY
+\*-----------------------------------*/
+#slide1 {
+  background-image: url('../img/flores.png');
+}
+
+#slide2 {
+  background-image: url('../img/flores2.2.jpg');
+}
+
+#slide3 {
+  background-image: url('../img/flores2.1.jpg');
+}
+
+#slide4 {
+  background-image: url('../img/flores3.jpg');
+}
+
+#slide5 {
+  background-image: url('../img/flores2.3.jpg');
+}
+
+.slide-image {
+  width: 100vw;
+  height: 500px;
+}
+
+.slide-image {
+  width: 100vw;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+#carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100vw;
+  height: 500px;
+}
+
+.slide-image {
+  width: 100vw;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+/*-----------------------------------*\
 #FOOTER
 \*-----------------------------------*/
 .footer {
@@ -690,7 +738,6 @@
   }
   
   /* footer medio*/
-  
   .footer .footer-center {
   width: 30%;
   }
@@ -868,4 +915,22 @@
         width: 100vw;
         height: 250px; 
     }
+
+    .button-container {
+      top: 44%;
+  }
+
+  .botonmodal {
+    font-size: 1em;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 17rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: white;
+}
   }

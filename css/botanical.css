@@ -1,12 +1,13 @@
 :root {
 
-    /*-----------------------------------*\
-      #COLORES
-    \*-----------------------------------*/
-        --GRIS: #333333;
-        --BLANCO: #ffffff;
-        --AMARILLO: #FFD700;
-      
+  /*-----------------------------------*\
+    #COLORES
+  \*-----------------------------------*/
+  --GRIS: #333333;
+  --BLANCO: #ffffff;
+  --AMARILLO: #FFD700;
+  --ROJO: rgb(222, 0, 13);
+
     /*-----------------------------------*\
       #TIPOGRAFÍAS
     \*-----------------------------------*/
@@ -447,7 +448,6 @@ footer {
   }
   
   /* footer medio*/
-  
   .footer .footer-center {
   width: 30%;
   }
@@ -548,7 +548,7 @@ footer {
     }
   }
 
-    /* ----------- RESPONSIVE DESIGN ----------- */
+/* ----------- RESPONSIVE DESIGN ----------- */
   
   /* Ajustes para tablets (menos de 768px de ancho) */
   @media (max-width: 768px) {
