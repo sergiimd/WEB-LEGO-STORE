@@ -12,6 +12,9 @@
   /*-----------------------------------*\
     #TIPOGRAFÍAS
   \*-----------------------------------*/
+
+  /* Tipografía 1  */
+
   .roboto-thin {
       font-family: "Roboto", sans-serif;
       font-weight: 100;
@@ -83,6 +86,22 @@
     font-weight: 900;
     font-style: italic;
   }
+
+
+  /* Tipografía 2  */
+
+  .m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .m-plus-rounded-1c-extrabold {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
   }
   
 /*-----------------------------------*\
@@ -329,7 +348,8 @@
     #TIENDA
   \*-----------------------------------*/
   .products > div >  .titulo1  {
-    font-weight: bold;
+    font-family: "M PLUS Rounded 1c";
+    font-weight: 800;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -445,7 +465,8 @@
     #SETS DESTACADOS
   \*-----------------------------------*/
   #destacados > div > .titulo1 {
-    font-weight: bold;
+    font-family: "M PLUS Rounded 1c";
+    font-weight: 800;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -589,7 +610,8 @@
   }
   
   #tematicas > div > h1 {
-    font-weight: bold; 
+    font-family: "M PLUS Rounded 1c";
+    font-weight: 800; 
     text-align: center; 
     margin-bottom: 20px;
     color: black; 
