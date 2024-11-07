@@ -846,7 +846,7 @@ margin: 0;
     font-size: 1.8rem;
     color: black;
     position: absolute;
-    top: -125px;
+    top: -135px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
