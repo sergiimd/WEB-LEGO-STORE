@@ -613,6 +613,10 @@ footer {
     .nav-menu a {
         margin: 10px 0;
     }
+
+    .titulo {
+      top: 70%;
+  }
 }
 
 /* Ajustes para móviles (menos de 480px de ancho) */
@@ -646,4 +650,8 @@ footer {
         margin: 8px 0;
         font-size: 16px; 
     }
+
+    .titulo {
+      top: 70%;
+  }
 }
